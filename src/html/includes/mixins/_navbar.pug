@@ -1,0 +1,17 @@
+mixin navbar(brand= 'Navbar', theme= 'dark')
+  nav(class= 'bg-'.concat(theme).concat(' navbar-'.concat(theme))).navbar.navbar-expand-lg
+    .container-fluid
+      a.navbar-brand(href='#')= brand
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarToggler' aria-controls='navbarToggler' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarToggler.collapse.navbar-collapse
+        ul.navbar-nav.me-auto.mb-2.mb-lg-0
+          li.nav-item
+            a.nav-link.active(aria-current='page' href='#') Home
+          li.nav-item
+            a.nav-link(href='#') Link
+          li.nav-item
+            a.nav-link.disabled Disabled
+        form.d-flex(role='search')
+          input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+          button.btn.btn-outline-success(type='submit') Search

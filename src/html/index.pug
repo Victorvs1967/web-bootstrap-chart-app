@@ -1,0 +1,22 @@
+extends includes/_layout
+
+block title
+  title MainPage 
+
+block content
+  .d-flex.flex-column.align-center
+    h1.text-center.mt-5 Hello, Charts!
+    .d-flex.flex-wrap
+      .col-6.py-4
+        //- img(src="@img/photo.png", alt="image").image.w-50.mb-4
+        .card.chart-container.w-75
+          canvas#chart01
+      .col-6.py-4
+        .card.chart-container.w-75
+          canvas#chart02
+      .col-6.py-4
+        .card.chart-container.w-75
+          canvas#chart03
+      .col-6.py-4
+        .card.chart-container.w-75
+          canvas#chart04
